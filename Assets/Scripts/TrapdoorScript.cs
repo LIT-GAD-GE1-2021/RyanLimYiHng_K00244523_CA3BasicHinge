@@ -22,4 +22,11 @@ public class TrapdoorScript : MonoBehaviour
     {
         
     }
+
+    public void SetHingeMotorSpeed(float speed)
+    {
+        JointMotor2D hingeMotor = hinge.motor;
+        hingeMotor.motorSpeed = speed;
+        hinge.motor = hingeMotor;
+    }
 }
